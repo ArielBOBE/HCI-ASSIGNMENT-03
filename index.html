@@ -9,22 +9,24 @@
         body {
             text-align: center;
             background-image: url("https://cdn.discordapp.com/attachments/876767435309604943/1162324074270310450/image.png?ex=653b85a6&is=652910a6&hm=7bb8eee5438dfacbf2e6a641669d8cd77d16acec5654518c465870ef493bea60&");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         #header {
-            text-align: center;
+            text-align: center; 
         }
         #bigbox {
             background-color: rgba(255, 252, 127);
-            width: 950px;
+            width: 50%;
             margin: 0 auto;    
             padding: 1em;  
             border-radius: 10px;
         }
         #aboutme {
-            font-size: 20px;
+            font-size: 1vw;
         }
         #important {
-            width: 500px;   
+            width: 50%;   
             padding: 1em;   
             margin:auto;
             background-color: rgba(255, 252, 127);
@@ -32,7 +34,7 @@
             
         }
         .unimportant {
-            width: 500px;
+            width: 50%;
             margin:auto;
             padding: 1em;   
             background-color: rgba(255, 252, 127);
@@ -42,7 +44,10 @@
             text-align: center;
         }
         #balling, #sleeping, #eating {
-            width: 50%;
+            width: 10vw;
+        }
+        #balling:hover, #sleeping:hover, #eating:hover {
+            width: 20vw
         }
         i:hover {
             color: red;
@@ -50,7 +55,33 @@
         i {
             font-size: 10vw;
         }
-
+        * {
+            box-sizing: border-box;
+        }
+        .bob {
+            width: 10vw;
+        }
+        .bob
+        h2, h1, h3 {
+            font-size: 1vw
+        }
+        #bobert {
+            width: 10vw;
+        }
+        legend {
+            font-size: 1vw;
+        }
+        input[type=radio] {
+        border: 0px;
+        width: 1vw;
+        height: 1vw;
+        }  
+        .dick {
+            font-size: 1vw;
+        }
+        a {
+            font-size: 1vw;
+        }
     </style>
 </head>
 <body style="text-align: center;">
@@ -61,21 +92,17 @@
     <section>
         <fieldset id="bigbox">
             <div style="float:left">
-                <img src="https://cdn.discordapp.com/attachments/403854158756708354/1154357437156048926/Sombrero.png"
-                width="200"
-                height="300"
-                title="Ariel">
+                <img src="https://cdn.discordapp.com/attachments/403854158756708354/1154357437156048926/Sombrero.png" id="bobert">
                 <br>
-                <input type="radio" name="Gender">Male
-                <br><input type="radio" name="Gender">Female
-                <br><input type="radio" name="Gender"checked>Prefer not to Say
+                <input type="radio" name="Gender" checked><p class="dick">Male</p>
+
 
             </div>
             <div style="float:right">
                 <br>
                 <fieldset id="smallbox">
                     <legend id="aboutme">About Me</legend>
-                    <p style="font-size: 1.05em ;">
+                    <p style="font-size: 1vw ;">
                     My name is Ariel Prandi Darmawidjaja. I was born in a hospital, raised by a family, and studied at a school.<br>
                     I have a few hobbies, but most of all I like partaking in them. I am 17 years old because I was born 17 years ago.<br>
                     I am currently a student studying in a university. I have two (2) dads and neither are of them are gay. I have seven (7) <br>
@@ -83,54 +110,59 @@
                     </p>
                 </fieldset>
                 <br><br><br>
-                <div style="float: left;">
-                    <h2>Socials:</h2> 
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" width="20"> &nbsp; <a style="font-size: large;"  href="https://www.instagram.com/ariel.human/"> Instagram</a> 
-                    <img src="https://cdn.discordapp.com/attachments/733860740506845214/1162333487697772594/YouTube-Icon-Full-Color-Logo.png?ex=653b8e6a&is=6529196a&hm=dbda47ec2106364d5f02793de4d5f57f16b5468e6887a8aa5b63c1683275de43&" width="32"> <a style="font-size: large;"  href="https://www.youtube.com/channel/UCbSYtAwE95fYDVg6J7n4MTg"> Youtube</a> 
-                    <img src="https://cdn.discordapp.com/attachments/733860740506845214/1162333427287199865/Steam-Logo.png?ex=653b8e5c&is=6529195c&hm=bfce4656c4874607bee98c865f26609578fc1a332cf5323d8c7bf3af33b80aaa&" width="30"> <a style="font-size: large;"  href="https://steamcommunity.com/id/21261375764/"> Steam</a>
+                <div style="float: left;" id="pho42">
+                    <h2 style="font-size: 1vw;">Socials:</h2> 
+                    <a style="font-size: large;"  href="https://www.instagram.com/ariel.human/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" style="width: 1vw;"></a> 
+                    <a style="font-size: large;"  href="https://www.youtube.com/channel/UCbSYtAwE95fYDVg6J7n4MTg"><img src="https://cdn.discordapp.com/attachments/733860740506845214/1162333487697772594/YouTube-Icon-Full-Color-Logo.png?ex=653b8e6a&is=6529196a&hm=dbda47ec2106364d5f02793de4d5f57f16b5468e6887a8aa5b63c1683275de43&" style="width: 1.7vw;"></a> 
+                    <a style="font-size: large;"  href="https://steamcommunity.com/id/21261375764/"><img src="https://cdn.discordapp.com/attachments/733860740506845214/1162333427287199865/Steam-Logo.png?ex=653b8e5c&is=6529195c&hm=bfce4656c4874607bee98c865f26609578fc1a332cf5323d8c7bf3af33b80aaa&" style="width: 1.65vw"> </a>
                 </div>
                 <div style="float: right;">
-                    <img src="https://media.discordapp.net/attachments/949797176966529097/1122621525305073705/attachment-129.gif" width="50%">
+                    <img src="https://media.discordapp.net/attachments/949797176966529097/1122621525305073705/attachment-129.gif" style="width: 10vw">
                 </div>
             </div>
         </fieldset>
     </section>
     <br><br><br>
-    <div id="hobbiesnstuff">
-        <table style="margin: auto;">
-            <tr>
-                <td rowspan="2">
-                    <fieldset id="important">
-                        <h1 style="background-color: grey;">Hobbies</h1>
-                        <h2>1. Basketball</h2>
-                        <img id="balling"src="https://cdn.discordapp.com/attachments/733860740506845214/1162346065564024912/arielbasket.JPG?ex=653b9a21&is=65292521&hm=51bf684a646ed1a0f846006be4d6dbe8dd3750e712fd19c6ea3a3c771a370314&">
-                        <h2>2. Sleeping</h2>
-                        <img id="sleeping" src="https://media.discordapp.net/attachments/733860740506845214/1162344336340570142/IMG_20231013_180116_990.jpg?ex=653b9885&is=65292385&hm=a08eaab7f4b0122459310280678ca02e4105a8f1d324a4f655107c02a43237a9&=&width=744&height=993">
-                        <h2>3. Eating</h2>
-                        <img id="eating" src="https://cdn.discordapp.com/attachments/733860740506845214/1162344549859999874/image.png?ex=653b98b8&is=652923b8&hm=4a313cb1c1d1a9ceeb51d21ff6163ade535cab770fa62409f1fc63973abb1647&">
-                    </fieldset>
-                </td>
-                <td>
-                    <fieldset class="unimportant">
-                            <h1 style="background-color: grey;">Programming Skills</h1>
-                            <i class="fab fa-html5" id="html"></i>
-                            <i class="fab fa-python" id="python"></i>
-                            <i class="fab fa-css3" id="css"></i>
-                    </fieldset>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <fieldset class="unimportant">
-                        <h1 style="background-color: grey;">Education</h1>
-                        <h2>1. <a href="https://binus.sch.id/">Kinderten - High School</a></h2>
-                        <img src="https://journaldjakarta.id/wp-content/uploads/2021/10/IMG-20211026-WA0024-512x341-1.jpg">
-                        <h2>2. <a href="https://binus.ac.id/wp-content/uploads/2020/09/CRui_81UsAAvF6i.jpg">University</a></h2>
-                        <img src="https://binus.ac.id/wp-content/uploads/2020/09/CRui_81UsAAvF6i.jpg">
-                    </fieldset>
-                </td>
-            </tr>
-        </table>
+    <section>
+        <div id="hobbiesnstuff">
+            <table style="margin: auto;">
+                <tr>
+                    <td rowspan="2">
+                        <fieldset id="important">
+                            <h1 style="background-color: grey;">Hobbies</h1>
+                            <h2>1. Basketball</h2>
+                            <img id="balling"src="https://cdn.discordapp.com/attachments/733860740506845214/1162346065564024912/arielbasket.JPG?ex=653b9a21&is=65292521&hm=51bf684a646ed1a0f846006be4d6dbe8dd3750e712fd19c6ea3a3c771a370314&">
+                            <h2>2. Sleeping</h2>
+                            <img id="sleeping" src="https://media.discordapp.net/attachments/733860740506845214/1162344336340570142/IMG_20231013_180116_990.jpg?ex=653b9885&is=65292385&hm=a08eaab7f4b0122459310280678ca02e4105a8f1d324a4f655107c02a43237a9&=&width=744&height=993">
+                            <h2>3. Eating</h2>
+                            <img id="eating" src="https://cdn.discordapp.com/attachments/733860740506845214/1162344549859999874/image.png?ex=653b98b8&is=652923b8&hm=4a313cb1c1d1a9ceeb51d21ff6163ade535cab770fa62409f1fc63973abb1647&">
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset class="unimportant">
+                                <h1 style="background-color: grey;">Programming Skills</h1>
+                                <i class="fab fa-html5" id="html"></i>
+                                <i class="fab fa-python" id="python"></i>
+                                <i class="fab fa-css3" id="css"></i>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset class="unimportant">
+                            <h1 style="background-color: grey;">Education</h1>
+                            <h2>1. <a href="https://binus.sch.id/">Kinderten - High School</a></h2>
+                            <img src="https://journaldjakarta.id/wp-content/uploads/2021/10/IMG-20211026-WA0024-512x341-1.jpg" class="bob">
+                            <h2>2. <a href="https://binus.ac.id/wp-content/uploads/2020/09/CRui_81UsAAvF6i.jpg">University</a></h2>
+                            <img src="https://binus.ac.id/wp-content/uploads/2020/09/CRui_81UsAAvF6i.jpg" class="bob">
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
     </div>
 </body>
 </html>
